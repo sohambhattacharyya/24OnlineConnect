@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">AceConnect</string>
-    <string name="notify_service_label">AceConnect</string>
-    <string name="notify_service_started">You are connected, CR7..</string>
-    <string name="notify_service_stopped">Service stopped</string>
+<string name="app_name">24OnlineConnect</string>
+<string name="notify_service_label">24OnlineConnect</string>
+<string name="notify_service_started">You are connected..</string>
+<string name="notify_service_stopped">Service stopped</string>
 </resources>
