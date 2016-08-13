@@ -29,54 +29,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         String url = "http://10.10.0.1/24online/webpages/client.jsp?fromlogout=true";
-        String postData = "username=user&password=12345";
-    //    String user = "username=sukanta_rsv";
-    //    String pass = "password=ZONDER";
+        String postData = "username=user&password=pass";
 
-
-        //      webView.postUrl(url, postData.getBytes());
-
-
-  /*      webView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                    case MotionEvent.ACTION_UP:
-                        v.requestFocusFromTouch();
-                        break;
-                }
-                return false;
-            }
-
-        });
-*/
         webView.postUrl(url, postData.getBytes());
 
-     /*   webView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                    case MotionEvent.ACTION_UP:
-                        if (!v.hasFocus()) {
-                            v.requestFocus();
-                        }
-                        break;
-                }
-                return false;
-            }
-        });*/
-
-        //     webView.dispatchKeyEvent(new KeyEvent(,KeyEvent.KEYCODE_ENTER));
-
+   
         final Instrumentation instrumentation = new Instrumentation();
 
         new Thread(new Runnable() {
             @Override
             public void run() {
 
-            //    instrumentation.sendCharacterSync(KeyEvent.KEYCODE_TAB);
 
                 try {
                     Thread.sleep(2000);
@@ -87,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
             //    instrumentation.sendCharacterSync(KeyEvent.KEYCODE_ENTER);
             //    instrumentation.sendCharacterSync(KeyEvent.KEYCODE_ENTER);
 
-                instrumentation.sendStringSync("sukanta_rsv");
+                instrumentation.sendStringSync("user");
 
                 instrumentation.sendCharacterSync(KeyEvent.KEYCODE_ENTER);
 
-                instrumentation.sendStringSync("ZONDER");
+                instrumentation.sendStringSync("pass");
 
                 instrumentation.sendCharacterSync(KeyEvent.KEYCODE_ENTER);
             //    instrumentation.sendCharacterSync(KeyEvent.KEYCODE_ENTER);
